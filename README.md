@@ -23,17 +23,17 @@ starting at time 0s and lasting 300 seconds, the second starting at time 10s and
 lasting 110 seconds, and the third starting at time 100s and lasting 45 seconds,
 i.e. like this:
 
-           0                                300
- Stream A: |---------------------------------| 30kbps
-                                               Packet len = 1400 bytes 
-
-             10          120
- Stream B:    |-----------|                    1Mbps
-                                               Packet len = 580 bytes
-
-                       100   145     
- Stream D:              |-----|                4Mbps
-                                               Packet len = 100 bytes
+                0                                300
+      Stream A: |---------------------------------| 30kbps
+                                                    Packet len = 1400 bytes 
+     
+                  10          120
+      Stream B:    |-----------|                    1Mbps
+                                                    Packet len = 580 bytes
+     
+                            100   145     
+      Stream D:              |-----|                4Mbps
+                                                    Packet len = 100 bytes
 
 scapy_pcap can be used to generate .pcap files for consumption by other programs
 such as traffic analytics tools.
